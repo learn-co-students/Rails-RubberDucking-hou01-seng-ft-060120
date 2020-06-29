@@ -1,0 +1,12 @@
+<h1>Duck Info!</h1>
+
+<h3><%=@duck.name%></h3>
+
+<ul>
+    <li>Owner:  <%=@duck.student.name%> <%=@duck.student_id%></li>
+    <li>Description:  <%=@duck.description%></li>
+</ul>
+
+<div>
+<button type="button"><a href= '/ducks/<%=@duck.id%>/edit'>Edit Duck</a></button>
+</div>
