@@ -1,0 +1,12 @@
+<h1>This is a student and their list of ducks</h1>
+
+<h3><%=@student.name%></h3>
+
+<ul>
+    <%@student.ducks.each do |duck|%>
+        <li><%=duck.name%></li>
+    <%end%>
+</ul>
+<div>
+<button type="button"><a href= '/students/<%=@student.id%>/edit'>Edit Student</a></button>
+</div>

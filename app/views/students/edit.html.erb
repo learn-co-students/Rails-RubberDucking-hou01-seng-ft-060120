@@ -1,0 +1,10 @@
+<h1>Edit Student Info</h1>
+<div>
+<%=form_for(@student) do |f| %>
+<%=f.label :name%>
+<%=f.text_field :name%>
+<%=f.label :Mod%>
+<%=f.select :mod, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5]]%>
+<%=f.submit "Make it so" %>
+<%end%>
+</div>

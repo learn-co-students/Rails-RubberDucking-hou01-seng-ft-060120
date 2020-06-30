@@ -2,6 +2,9 @@
 
 <ul>
   <% @ducks.each do |duck| %>
-    <li> <%= duck.name %> </li>
+    <li> <a href= 'ducks/<%=duck.id%>'><%= duck.name %> </li>
   <% end %>
 </ul>
+
+<div>
+<button type="button"><a href= '/ducks/new'>Create a rubber duck</a></button>
